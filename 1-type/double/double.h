@@ -1,5 +1,9 @@
 bool compare_double(double x, double y) {
-    return true; // Not implementation
+    if(x == y){
+    return true;
+    }
+    else
+    return false;
 }
 
 int get_nearest_int(double x) {
