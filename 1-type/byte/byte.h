@@ -1,3 +1,3 @@
 unsigned char max_byte(unsigned short) {
-    return 1; // Not implementation
+    return 0; // Not implementation
 }
