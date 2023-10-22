@@ -7,7 +7,10 @@ bool compare_double(double x, double y) {
 }
 
 int get_nearest_int(double x) {
-    return 0; // Not implementation
+    if (){
+
+    }
+    return 0;
 }
 
 double get_fractional(double x) {

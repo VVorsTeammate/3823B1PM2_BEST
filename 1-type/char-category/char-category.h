@@ -2,6 +2,7 @@
 
 
 bool is_digit(char x) {
+    
     return true; // No implementation
 }
 

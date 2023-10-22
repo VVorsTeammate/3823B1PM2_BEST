@@ -214,6 +214,76 @@ jobs:
           ./build/1-type/deadline
           python3 testscript.py -p ${{github.actor}} -t "1-type" -r "$(echo $?)" -m 10
           
+      - name: 2-if_else_switch clear
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: python3 testscript.py -p ${{github.actor}} -t "2-if_else_switch" -n
+
+      - name: 2-if_else_switch Change
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/2-if_else_switch/change
+          python3 testscript.py -p ${{github.actor}} -t "2-if_else_switch" -r "$(echo $?)" -m 10
+          
+      - name: 2-if_else_switch leapyear
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/2-if_else_switch/leapyear
+          python3 testscript.py -p ${{github.actor}} -t "2-if_else_switch" -r "$(echo $?)" -m 10
+
+      - name: 2-if_else_switch chocolate
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/2-if_else_switch/chocolate
+          python3 testscript.py -p ${{github.actor}} -t "2-if_else_switch" -r "$(echo $?)" -m 10
+
+      - name: 2-if_else_switch icecream
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/2-if_else_switch/icecream
+          python3 testscript.py -p ${{github.actor}} -t "2-if_else_switch" -r "$(echo $?)" -m 10
+
+      - name: 2-if_else_switch QuadraticEquation
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/2-if_else_switch/QuadraticEquation
+          python3 testscript.py -p ${{github.actor}} -t "2-if_else_switch" -r "$(echo $?)" -m 10
+
+      - name: 2-if_else_switch monthday
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/2-if_else_switch/monthday
+          python3 testscript.py -p ${{github.actor}} -t "2-if_else_switch" -r "$(echo $?)" -m 10
+
+      - name: 2-if_else_switch chess
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/2-if_else_switch/chess
+          python3 testscript.py -p ${{github.actor}} -t "2-if_else_switch" -r "$(echo $?)" -m 10
+
+      - name: 2-if_else_switch twoboxes
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/2-if_else_switch/twoboxes
+          python3 testscript.py -p ${{github.actor}} -t "2-if_else_switch" -r "$(echo $?)" -m 10
+          
       - name: Upload release asset
         if: github.event_name == 'release' && (github.event.action == 'published' || github.event.action == 'created')
         uses: actions/upload-release-asset@v1

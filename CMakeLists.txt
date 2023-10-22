@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.10)
 
 project(BEST_3823B1FI3)
 
+set(CMAKE_C_STANDARD_LIBRARIES "${CMAKE_C_STANDARD_LIBRARIES} -lm")
+
 include_directories(utils)
 
 add_subdirectory(1-type)
