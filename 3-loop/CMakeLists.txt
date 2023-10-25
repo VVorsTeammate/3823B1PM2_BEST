@@ -1,0 +1,7 @@
+add_executable(limit limit/test.c)
+add_executable(integral integral/test.c)
+add_executable(find_digit find_digit/test.c)
+add_executable(count_max_digit count_max_digit/test.c)
+add_executable(calc_e calc_e/test.c)
+add_executable(find_elem find_elem/test.c)
+add_executable(find_bin_pattern bin_patterns/test.c)
