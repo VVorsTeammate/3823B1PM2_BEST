@@ -1,5 +1,5 @@
 bool compare_double(double x, double y) {
-    if(x == y){
+    if((float)x == (float)y){
     return true;
     }
     else
@@ -7,12 +7,12 @@ bool compare_double(double x, double y) {
 }
 
 int get_nearest_int(double x) {
-    if (){
-
-    }
-    return 0;
+    if (x-(int)x < 0.5)
+        return (int)x;
+    else
+        return (int)x+1;
 }
 
 double get_fractional(double x) {
-    return 0.1; // Not implementation
+    return x - floor(x);
 }
