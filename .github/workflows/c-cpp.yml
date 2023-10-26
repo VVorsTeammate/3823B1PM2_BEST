@@ -439,6 +439,14 @@ jobs:
         run: |
           ./build/5-pointer/packaging
           python3 fill_magazine.py -t "packaging" -r "$(echo $?)"
+
+      - name: 5-pointer calculate size
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/5-pointer/calc_size
+          python3 fill_magazine.py -t "calc_size" -r "$(echo $?)"
           
       - name: Estimate
         if: always()

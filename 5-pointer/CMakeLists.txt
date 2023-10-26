@@ -1,3 +1,6 @@
 add_executable(package packaging/test.c)
 add_executable(matrix_mul matrix_multy/test.c)
 add_executable(find_even even/test.c)
+add_executable(calculate_size calc_size/test.c)
+add_executable(angle scalar_product/test.c)
+add_executable(wild_game wild_game_with_arrays/test.c)
