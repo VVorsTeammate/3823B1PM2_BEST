@@ -22,4 +22,4 @@ double limit(double eps, int n_max){
     else
         x_n = n_max / sqrt((pow(n_max, 2) + n_max));
         return x_n;
-}
+} 
