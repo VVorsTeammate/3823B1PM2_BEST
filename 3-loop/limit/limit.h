@@ -8,7 +8,7 @@ double limit(double eps, int n_max){
 
         while(fabs(x_1 - x_2) > eps){
             if (n_1 <= n_max){
-            
+             
             n_1+=1;
             x_2 = x_1;
             x_1 = n_1 / sqrt((pow(n_1, 2) + n_1));
