@@ -1,8 +1,5 @@
 #include <math.h>
-int k=
-int abc(){
-    arr[]=
-}
-char count_max_digit(long long int){
+
+char count_max_digit(long long int1){
     return 100;
 }
