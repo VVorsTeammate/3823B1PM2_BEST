@@ -357,7 +357,7 @@ jobs:
         shell: bash
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
-          ./build/4-array/det
+          ./build/4-array/determinant
           python3 fill_magazine.py -t "det" -r "$(echo $?)"
           
       - name: 4-array find_hole
@@ -365,7 +365,7 @@ jobs:
         shell: bash
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
-          ./build/4-array/find_hole
+          ./build/4-array/hole_finder
           python3 fill_magazine.py -t "find_hole" -r "$(echo $?)"
 
       - name: 4-array get_percent
@@ -373,7 +373,7 @@ jobs:
         shell: bash
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
-          ./build/4-array/get_percent
+          ./build/4-array/calc_percent
           python3 fill_magazine.py -t "get_percent" -r "$(echo $?)"   
 
       - name: 4-array kernel
@@ -381,7 +381,7 @@ jobs:
         shell: bash
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
-          ./build/4-array/kernel
+          ./build/4-array/find_kernel
           python3 fill_magazine.py -t "kernel" -r "$(echo $?)"
 
       - name: 4-array little_big_converter
@@ -389,7 +389,7 @@ jobs:
         shell: bash
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
-          ./build/4-array/little_big_converter
+          ./build/4-array/little_big_convert
           python3 fill_magazine.py -t "little_big_converter" -r "$(echo $?)"
           
       - name: 4-array max_local_min
@@ -397,7 +397,7 @@ jobs:
         shell: bash
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
-          ./build/4-array/max_local_min
+          ./build/4-array/maxmin
           python3 fill_magazine.py -t "max_local_min" -r "$(echo $?)"          
           
       - name: 4-array more_on_left
@@ -413,7 +413,7 @@ jobs:
         shell: bash
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
-          ./build/4-array/robot
+          ./build/4-array/robot_move
           python3 fill_magazine.py -t "robot" -r "$(echo $?)"             
         
       - name: 5-pointer even
