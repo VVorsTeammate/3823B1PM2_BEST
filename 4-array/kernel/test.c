@@ -27,12 +27,10 @@ void test_find_matrix_kernel() {
     int kernel2[] = {0, 1, 0, 1, 1, 1, 0, 1, 0};
 
 
-    TEST_ASSERT(find_matrix_kernel(matrix1, kernel1, sizeof(matrix1)/sizeof(int), sizeof(kernel1)/sizeof(int)) == 1);
-    TEST_ASSERT(find_matrix_kernel(matrix2, kernel1, sizeof(matrix2)/sizeof(int), sizeof(kernel1)/sizeof(int)) == 2);
-    TEST_ASSERT(find_matrix_kernel(matrix3, kernel1, sizeof(matrix3)/sizeof(int), sizeof(kernel1)/sizeof(int)) == 2);
-    TEST_ASSERT(find_matrix_kernel(matrix4, kernel2, sizeof(matrix4)/sizeof(int), sizeof(kernel2)/sizeof(int)) == 978);
-
-
+    TEST_ASSERT(find_matrix_kernel(matrix1, kernel1, 3, 3, 3, 3) == 1);
+    TEST_ASSERT(find_matrix_kernel(matrix2, kernel1, 5, 5, 3, 3) == 2);
+    TEST_ASSERT(find_matrix_kernel(matrix3, kernel1, 3, 4, 3, 3) == 2);
+    TEST_ASSERT(find_matrix_kernel(matrix4, kernel2, 5, 9, 3, 3) == 978);
 }
 
 TEST_LIST = {

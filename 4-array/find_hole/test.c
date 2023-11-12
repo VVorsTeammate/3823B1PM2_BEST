@@ -32,7 +32,7 @@ void test_determinant() {
 
     TEST_ASSERT(hole_finder(plato1, 3, 3) == 101);
     TEST_ASSERT(hole_finder(plato2, 5, 8) == 302);
-    TEST_ASSERT(hole_finder(plato3, 3, 3) == 501);
+    TEST_ASSERT(hole_finder(plato3, 10, 10) == 501);
 
 }
 
