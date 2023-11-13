@@ -1,6 +1,6 @@
 #include <math.h>
 
-char robot_move(int xs[], int ys[], int num_points, int area_radius, int xt, int yt){
+char robot_move(int xs[], int ys[], int num_points, double area_radius, int xt, int yt){
     for (int i = 0; i < num_points; i++){
         if (sqrt(pow(fabs(xs[i] - xt), 2) + pow(fabs(ys[i] - yt), 2)) <= area_radius)
             return 1;
