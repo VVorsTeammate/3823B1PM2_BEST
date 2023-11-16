@@ -1,0 +1,5 @@
+add_executable(calc_row_sum calc_row_sum/test.c)
+add_executable(recursion_array_sum recursion_array_sum/test.c)
+add_executable(NOD NOD/test.c)
+add_executable(new_series new_series/test.c)
+add_executable(revers_array revers_array/test.c)

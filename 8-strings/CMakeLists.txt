@@ -1,0 +1,6 @@
+add_executable(str_to_double str_to_double/test.c)
+add_executable(double_to_str double_to_str/test.c)
+add_executable(calc_expresson calc_expresson/test.c)
+add_executable(palindrome palindrome/test.c)
+add_executable(delete_symbol delete_symbol/test.c)
+add_executable(to_lower to_lower/test.c)

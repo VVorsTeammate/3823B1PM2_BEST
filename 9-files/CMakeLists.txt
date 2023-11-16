@@ -1,0 +1,1 @@
+add_executable(smyle_file smyle_file/test.c)
