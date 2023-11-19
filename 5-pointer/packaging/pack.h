@@ -3,7 +3,6 @@
 unsigned long long pack_ull(unsigned char arr[], int size){
     if (size > 8) return 0;
     unsigned long long* a = (unsigned long long*) arr;
-
     return *a;
 }
 
