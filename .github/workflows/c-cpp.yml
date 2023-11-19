@@ -421,7 +421,7 @@ jobs:
         shell: bash
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
-          ./build/5-pointer/even
+          ./build/5-pointer/find_even
           python3 fill_magazine.py -t "even" -r "$(echo $?)"      
 
       - name: 5-pointer matrix_multy
@@ -429,7 +429,7 @@ jobs:
         shell: bash
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
-          ./build/5-pointer/matrix_multy
+          ./build/5-pointer/matrix_mul
           python3 fill_magazine.py -t "matrix_multy" -r "$(echo $?)"            
           
       - name: 5-pointer packaging
@@ -437,7 +437,7 @@ jobs:
         shell: bash
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
-          ./build/5-pointer/packaging
+          ./build/5-pointer/package
           python3 fill_magazine.py -t "packaging" -r "$(echo $?)"
 
       - name: 5-pointer calculate size
@@ -445,7 +445,7 @@ jobs:
         shell: bash
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
-          ./build/5-pointer/calc_size
+          ./build/5-pointer/calculate_size
           python3 fill_magazine.py -t "calc_size" -r "$(echo $?)"
 
       - name: 5-pointer angle

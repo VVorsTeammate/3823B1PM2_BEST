@@ -35,7 +35,7 @@ void test_matrix_multy() {
     TEST_ASSERT(compare(matrix_multy(left_mat_1, 2, 2, right_mat_1, 2, 2), res_mat_1, 2, 2) == 1);
     TEST_ASSERT(compare(matrix_multy(left_mat_2, 2, 3, right_mat_2, 3, 2), res_mat_2, 2, 2) == 1);
     TEST_ASSERT(compare(matrix_multy(right_mat_2, 3, 2, right_mat_2, 3, 2), res_mat_2, 2, 2) == 0);
-    TEST_ASSERT(compare(matrix_multy(right_mat_4, 1, 6, right_mat_4, 6, 1), res_mat_4, 1, 1) == 1);
+    TEST_ASSERT(compare(matrix_multy(left_mat_4, 1, 6, right_mat_4, 6, 1), res_mat_4, 1, 1) == 1);
 }
 
 
