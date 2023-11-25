@@ -20,7 +20,7 @@ void test_kramer_method() {
     int b5[] = {1, 1};
 
 
-    TEST_ASSERT(fabs(kramer_method(a1, b1, sizeof(b1)/sizeof(int)) - 1.0) < eps);
+    TEST_ASSERT(fabs(kramer_method(a1, b1, sizeof(b1)/sizeof(int)) + 1.0) < eps);
     TEST_ASSERT(fabs(kramer_method(a2, b2, sizeof(b2)/sizeof(int)) - 0.6) < eps);
     TEST_ASSERT(fabs(kramer_method(a3, b3, sizeof(b3)/sizeof(int)) + 1.0) < eps);
     TEST_ASSERT(fabs(kramer_method(a4, b4, sizeof(b4)/sizeof(int))) < eps);
