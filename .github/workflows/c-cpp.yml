@@ -511,6 +511,94 @@ jobs:
         run: |
           ./build/6-functions/subarray
           python3 fill_magazine.py -t "subarray" -r "$(echo $?)"
+
+      - name: 7-recursion calc row sum
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/7-recursion/calc_row_sum
+          python3 fill_magazine.py -t "calc_row_sum" -r "$(echo $?)"
+
+      - name: 7-recursion recursion array sum
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/7-recursion/recursion_array_sum
+          python3 fill_magazine.py -t "recursion_array_sum" -r "$(echo $?)"
+
+      - name: 7-recursion NOD
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/7-recursion/NOD
+          python3 fill_magazine.py -t "NOD" -r "$(echo $?)"
+
+      - name: 7-recursion new series
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/7-recursion/new_series
+          python3 fill_magazine.py -t "new_series" -r "$(echo $?)"
+
+      - name: 7-recursion revers array
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/7-recursion/revers_array
+          python3 fill_magazine.py -t "revers_array" -r "$(echo $?)"
+
+      - name: 8-strings str to double
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/8-strings/str_to_double
+          python3 fill_magazine.py -t "str_to_double" -r "$(echo $?)"
+
+      - name: 8-strings double to str
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/8-strings/double_to_str
+          python3 fill_magazine.py -t "double_to_str" -r "$(echo $?)"
+
+      - name: 8-strings calc expresson
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/8-strings/calc_expresson
+          python3 fill_magazine.py -t "calc_expresson" -r "$(echo $?)"
+
+      - name: 8-strings palindrome
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/8-strings/palindrome
+          python3 fill_magazine.py -t "palindrome" -r "$(echo $?)"
+
+      - name: 8-strings delete symbol
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/8-strings/delete_symbol
+          python3 fill_magazine.py -t "delete_symbol" -r "$(echo $?)"
+
+      - name: 8-strings to lower
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/8-strings/to_lower
+          python3 fill_magazine.py -t "to_lower" -r "$(echo $?)"
           
       - name: Estimate
         if: always()
