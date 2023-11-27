@@ -1,9 +1,13 @@
+#include <stdio.h>
+
 unsigned char max_byte(unsigned short number) {
-    int dv, dv_2, n=number;
-        dv=n&4+n&3*10+n&2*100+n&1*1000;
-        dv_2=n&8+n&7*10+n&6*100+n&5*1000;
-        if (dv > dv_2)
-            return (unsigned char)dv;
-        else
-            return (unsigned char)dv_2;
+    unsigned char b_1, b_2, b_3, b_4;
+    b_1 = (unsigned char)(number>>8);
+    b_2 = (unsigned char)(number);
+    unsigned char max = b_1;
+    unsigned char arr[] = {b_1, b_2};
+    for(int i = 1; i < 2; i++){
+        if(max <= arr[i]) max = arr[i];
+    }
+    return max;
 }
