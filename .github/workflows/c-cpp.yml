@@ -599,6 +599,94 @@ jobs:
         run: |
           ./build/8-strings/to_lower
           python3 fill_magazine.py -t "to_lower" -r "$(echo $?)"
+
+      - name: 9-files smyle_file
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/9-files/smyle_file
+          python3 fill_magazine.py -t "smyle_file" -r "$(echo $?)"
+
+      - name: 9-files christmas tree
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/9-files/christmas_tree
+          python3 fill_magazine.py -t "christmas_tree" -r "$(echo $?)"
+
+      - name: 9-files fileinfo
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/9-files/fileinfo
+          python3 fill_magazine.py -t "fileinfo" -r "$(echo $?)"
+
+      - name: 9-files JSON Parser
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/9-files/JSON_Parser
+          python3 fill_magazine.py -t "JSON_Parser" -r "$(echo $?)"
+
+      - name: 9-files XML Parser
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/9-files/XML_Parser
+          python3 fill_magazine.py -t "XML_Parser" -r "$(echo $?)"
+
+      - name: 9-files what_word
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/9-files/what_word
+          python3 fill_magazine.py -t "what_word" -r "$(echo $?)"
+
+      - name: 9-files is not python
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/9-files/is_not_python
+          python3 fill_magazine.py -t "is_not_python" -r "$(echo $?)"
+
+      - name: 10-structs struct like parametr
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/10-structs/struct_like_parametr
+          python3 fill_magazine.py -t "struct_like_parametr" -r "$(echo $?)"
+
+      - name: 10-structs med queue
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/10-structs/med_queue
+          python3 fill_magazine.py -t "med_queue" -r "$(echo $?)"
+
+      - name: 10-structs return struct
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/10-structs/return_struct
+          python3 fill_magazine.py -t "return_struct" -r "$(echo $?)"
+
+      - name: 10-structs "paper please"
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/10-structs/paper_please
+          python3 fill_magazine.py -t "paper_please" -r "$(echo $?)"
           
       - name: Estimate
         if: always()

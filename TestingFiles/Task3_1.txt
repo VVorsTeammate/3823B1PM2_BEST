@@ -1,0 +1,5 @@
+Programming is the process of creating and modifying computer programs.
+
+In the words of one of the founders of programming languages, Niklaus Wirth, “Programs = algorithms + data structures.”
+
+Programming is based on the use of programming languages and programming tools. Most programming languages are based on textual representation of programs, but sometimes programming can be done using, for example, visual programming or "zero-code" programming.

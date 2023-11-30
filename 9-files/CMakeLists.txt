@@ -1,1 +1,7 @@
 add_executable(smyle_file smyle_file/test.c)
+add_executable(christmas_tree christmas_tree/test.c)
+add_executable(fileinfo fileinfo/test.c)
+add_executable(JSON_Parser JSON_Parser/test.c)
+add_executable(XML_Parser XML_Parser/test.c)
+add_executable(what_word what_word/test.c)
+add_executable(is_not_python is_not_python/test.c)

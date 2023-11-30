@@ -1,0 +1,14 @@
+int main()
+{
+    int k = 1000;
+    int sum = 0;
+    double prev = 0;
+    for (;;) {
+        sum += prev;
+        if (i != 0){
+            prev = (prev + 1) / i;
+        }
+    }
+
+    return 0;
+}

@@ -1,0 +1,105 @@
+void transform_array(double* array, int size, int* comands, int comands_count) {
+    double srAr = 0.0;
+    int percent = 100;
+    int counter = 0;
+    for (int i = 0; i < comands_count; i++) {
+        switch (comands[i]) {
+        case 1:
+            for (int j = 0; j < size; j++){
+                array[j] += 1.0;
+            }
+            break;
+        case 2:
+            for (int j = 0; j < size; j++){
+                array[j] = pow(fabs(array[j]), 0.5);
+            }
+            break;
+        case 3:
+            srAr = 0.0;
+            for (int j = 0; j < size; j++){
+                srAr += array[j];
+            }
+            srAr = srAr / size;
+            for (int j = 0; j < size; j++){
+                array[j] = pow(fabs(array[j]), srAr);
+            }
+            break;
+        case 4:
+            for (int j = 0; j < size; j++){
+                if ((int)array[j] % 2 == 0){
+                    array[j] = (-1)*array[j];
+                }
+                else{
+                    array[j] = pow(fabs(array[j]), -1);
+                }
+            }
+            break;
+        case 5:
+            for (int j = 0; j < size; j++){
+                if ((int)array[j] % 2 == 0 && j % 2 == 0){
+                    array[j] = 0.0;
+                }
+            }
+            break;
+        case 6:
+            percent = 100;
+            counter = 0;
+            for (j = 0; j < size; j++){
+                if (array[j] > 0.0){
+                    counter++;
+                }
+            }
+            percent = (int)(100 * ((double)counter / size));
+            if (percent > 52) { // понижаем число элементов
+                while (percent > 50) {
+                    //1. Ищем минимум НЕТ!!! ближайший к нулю
+                    double min = 10000000000;
+                    for (int j = 0; j < size; j++){
+                        if (array[j] > 0.0 && array[j] < min){
+                            min = array[j];
+                        }
+                    }
+                    //2. Уменьшаем  весь массив на этот минимум
+                    for (int j = 0; j < size; j++){
+                        array[j] -= min;
+                    }
+                    //3. Пересчитываем процент
+                    counter = 0;
+                    for (int j = 0; j < size; j++){
+                        if (array[j] > 0.0){
+                            counter++;
+                        }
+                    }
+                    percent = (int)(100 * ((double)counter / size));
+                }
+            }
+            if (percent < 48) { // повышаем число элементов
+                while (percent < 50) {
+                    //1. Ищем минимум
+                    double max = -100000000000;
+                    for (int j = 0; j < size; j++){
+                        if (array[j] <= 0.0 && array[j] > max){
+                            max = array[j];
+                        }
+                    }
+                    //2. Увеличиваем весь массив на этот максимум
+                    for (int j = 0; j < size; j++){
+                        array[j] += max;
+                    }
+                    //3. Пересчитываем процент
+                    counter = 0;
+                    for (int j = 0; j < size; j++){
+                        if (array[j] > 0.0){
+                            counter++;
+                        }
+                    }
+                    percent = (int)(100 * ((double)counter / size));
+                }
+            }
+            break;
+        default:
+            array = NULL;
+            return;
+        }
+    }
+}

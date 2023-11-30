@@ -15,5 +15,6 @@ add_subdirectory(6-functions)
 add_subdirectory(7-recursion)
 add_subdirectory(8-strings)
 add_subdirectory(9-files)
+add_subdirectory(10-structs)
 
 add_executable(sum 0-Begin_Task/test.c)
