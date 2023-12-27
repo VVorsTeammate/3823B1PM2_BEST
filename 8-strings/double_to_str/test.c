@@ -7,7 +7,7 @@ void test_double_to_str_converter() {
     TEST_ASSERT(strcmp(convert(888.887), "888.887") == 0);
     TEST_ASSERT(strcmp(convert(-10.1), "-10.1") == 0);
     TEST_ASSERT(strcmp(convert(101.101), "101.101") == 0);
-    TEST_ASSERT(strcmp(convert(3000000000.10000000001), "3000000000.10000000001") == 0);
+    TEST_ASSERT(strcmp(convert(3000.1001), "3000.1001") == 0);
     TEST_ASSERT(strcmp(convert(-10.0), "10.0") != 0);
 }
 

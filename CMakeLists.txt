@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(BEST_3823B1FI3)
+project(3823B1PM2_BEST)
 
 set(CMAKE_C_STANDARD_LIBRARIES "${CMAKE_C_STANDARD_LIBRARIES} -lm")
 
