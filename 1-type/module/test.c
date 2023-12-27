@@ -3,7 +3,7 @@
 
 
 void test_module() {
-    (void)(int (*)(int, int, int))(get_module); // signature has not changed
+    (void)(int (*)(int, int, int))(get_module);
     TEST_ASSERT(get_module(1, 1, 1) == 0);
     TEST_ASSERT(get_module(3, 3, 5) == 4);
     TEST_ASSERT(get_module(10, 1, 5) == 0);
